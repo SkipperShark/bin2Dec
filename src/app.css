@@ -1,0 +1,90 @@
+.App {
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	color: white;
+	background-color: black;
+}
+
+.Card {
+	height: 50%;
+	width: 50%;
+
+	box-sizing: border-box;
+	padding: 20px;
+	display: flex;
+	border-radius: 10%;
+	border: solid 5px darkred;
+	flex-direction: column;
+	justify-content: space-around;
+
+	background-color: darkblue;
+	font-size: calc(10px + 2vmin);
+}
+
+.Calculator {
+	padding-left: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: stretch;
+	/* align-items: stretch; */
+	flex-grow: 1;
+}
+
+.Line {
+	display: flex;
+	flex-direction: row;
+}
+
+.ContentValue {
+	margin-left: 2rem;
+	flex-grow: 1;
+	border-bottom: solid 1px white;
+	text-align: center;
+}
+
+.ErrorMessage {
+	font-size: calc(5px + 2vmin);
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: red;
+}
+
+.animation1 {
+	animation: highlightErrorMessage1 1s;
+}
+
+.animation2 {
+	animation: highlightErrorMessage2 1s;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+@keyframes highlightErrorMessage1 {
+	0% {
+		color: white;
+	}
+
+	100% {
+		color: red;
+	}
+}
+
+@keyframes highlightErrorMessage2 {
+	0% {
+		color: white;
+	}
+
+	100% {
+		color: red;
+	}
+}
